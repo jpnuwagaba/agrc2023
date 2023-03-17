@@ -6,7 +6,18 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'lato': ["'Lato', sans-serif"]
+    },
+    extend: {
+      colors: {
+        lightRed: '#ec4323',
+        darkRed: '#a8170d',
+        lightGreen: '#4cb748',
+        darkGreen: '#027441',
+        orange: '#fbb040',
+      }
+    },
   },
   plugins: [],
 }
