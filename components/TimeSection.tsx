@@ -21,7 +21,7 @@ const TimeSection = () => {
           <div className="flex flex-col gap-1">
             <BiAlarm size={'3em'} color={'orange'} />
             <div className="text-darkGreen font-bold">Call Now</div>
-            <div className="text-sm text-gray-700">+256 414 531 047</div>
+            <div className="text-sm text-gray-700">+256 784 614675</div>
           </div>
         </div>
         <div className="shadow-lg">

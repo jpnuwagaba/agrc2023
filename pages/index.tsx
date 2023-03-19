@@ -6,6 +6,7 @@ import HomeSection from '../components/HomeSection'
 import PreConference from '../components/PreConference'
 import Theme from '../components/Theme'
 import TimeSection from '../components/TimeSection'
+import Location from '../components/Location'
 
 const Home: NextPage = () => {
   return (
@@ -17,8 +18,9 @@ const Home: NextPage = () => {
       <HomeSection />
       <Theme />
       <TimeSection />
-      <PreConference />
       <AboutSection />
+      <PreConference />
+      <Location />
     </div>
   )
 }
