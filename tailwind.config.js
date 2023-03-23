@@ -9,7 +9,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'lato': ["'Lato', sans-serif"]
+      'manrope': ["'Manrope', sans-serif"]
     },
     extend: {
       colors: {

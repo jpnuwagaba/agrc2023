@@ -6,7 +6,7 @@ const PreConference = () => {
   return (
     <div>
       <div className='w-[90%] mx-auto grid gap-5 md:grid-cols-2 py-16 md:w-[80%]'>
-        <div className="flex flex-col items-start gap-6 bg-darkGreen p-8 rounded-xl shadow-lg">
+        <div className="flex flex-col items-start gap-6 bg-darkGreen p-8 rounded-lg shadow-lg">
           <FaPeopleCarry size={'2.5em'} color={'white'}/>
           <div className='text-white'>
             <div className="text-xs my-1">7th - 9th August, 2023</div>
@@ -17,7 +17,7 @@ const PreConference = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col items-start gap-6 bg-orange p-8 rounded-xl shadow-lg">
+        <div className="flex flex-col items-start gap-6 bg-orange p-8 rounded-lg shadow-lg">
           <FaChalkboardTeacher size={'2.5em'} color={'white'}/>
           <div className='text-white'>
             <div className="text-xs my-1">7th - 9th August, 2023</div>

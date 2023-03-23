@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <div className='font-lato'>
+      <div className='font-manrope'>
         <Navbar />
         <div className='pt-12 md:pt-24'><Component {...pageProps} /></div>
         <Footer />

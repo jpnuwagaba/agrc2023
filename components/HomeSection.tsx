@@ -11,8 +11,8 @@ const HomeSection = () => {
           <div className="text-xl md:text-2xl text-orange font-bold my-4 uppercase">11 <sup>th</sup> - 12 <sup>th</sup> august, 2023</div>
           <div className='flex justify-around md:justify-start'>
             <div className='flex items-center gap-3 uppercase'>
-              <div className="rounded-xl">call for abstracts</div>
-              <div className="rounded-lg bg-darkRed p-2 cursor-pointer">submit</div>
+              {/* <div className="rounded-xl">call for abstracts</div> */}
+              <div className="rounded-lg bg-darkRed text-sm font-bold p-2 cursor-pointer">submit abstract</div>
             </div>
           </div>
         </div>

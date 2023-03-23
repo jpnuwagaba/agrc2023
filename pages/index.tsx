@@ -7,6 +7,7 @@ import PreConference from '../components/PreConference'
 import Theme from '../components/Theme'
 import TimeSection from '../components/TimeSection'
 import Location from '../components/Location'
+import Speakers from '../components/Speakers'
 
 const Home: NextPage = () => {
   return (
@@ -14,12 +15,17 @@ const Home: NextPage = () => {
       <Head>
         <title>AGRC 2023</title>
         <link rel="icon" href="/logo.svg" />
+        <meta 
+          name='description'
+          content='Advances in Geomatics Research Conference is a biennial conference organized to highlight, promote and encourage scholarship in the various Geomatics sub-disciplines e.g., Location-based services, Engineering Surveying, GIS, Remote Sensing, Land Management, integrated spatial planning, etc taking place locally, regionally and internationally.'
+        />
       </Head>
       <HomeSection />
       <Theme />
       <TimeSection />
       <AboutSection />
       <PreConference />
+      <Speakers />
       <Location />
     </div>
   )

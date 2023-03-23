@@ -24,11 +24,11 @@ const TimeSection = () => {
             <div className="text-sm text-gray-700">+256 784 614675</div>
           </div>
         </div>
-        <div className="shadow-lg">
+        <div className="shadow-xs">
           <div className="flex flex-col items-center shadow-lg p-5">
             <div className='flex flex-col items-center'>
-              <div className="font-bold text-lg">Register Today</div>
-              <div className="text-xs text-gray-700">Set up your sth in minutes</div>
+              <div className="font-bold text-xl">Register Today</div>
+              {/* <div className="text-xs text-gray-700">Set up your sth in minutes</div> */}
             </div>
             <br />
             <Timer />
