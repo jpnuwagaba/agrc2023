@@ -12,8 +12,8 @@ const PreConference = () => {
             <div className="text-xs my-1">7th - 9th August, 2023</div>
             <div className="text-xl font-bold uppercase">pre-conference workshops</div>
             <ul className='text-sm uppercase'>
-              <li className='underline mt-2 list-disc'>african reference frame (afref) and gnss - cors and its applications</li>
-              <li className='underline mt-2 list-disc'>gmes</li>
+              <li className='mt-2 list-disc'>african reference frame (afref) and gnss - cors and its applications</li>
+              <li className='mt-2 list-disc'>gmes</li>
             </ul>
           </div>
         </div>
@@ -23,8 +23,8 @@ const PreConference = () => {
             <div className="text-xs my-1">7th - 9th August, 2023</div>
             <div className="text-xl font-bold uppercase">pre-conference tutorials</div>
             <ul className='text-sm uppercase'>
-              <li className='underline mt-2 list-disc'>introduction to fit-for-purpose land aministration for land professionals</li>
-              <li className='underline mt-2 list-disc'>fundamentals of geographic information systems</li>
+              <li className='mt-2 list-disc'>introduction to fit-for-purpose land aministration for land professionals</li>
+              <li className='mt-2 list-disc'>fundamentals of geographic information systems</li>
             </ul>
           </div>
         </div>

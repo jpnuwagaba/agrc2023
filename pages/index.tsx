@@ -8,6 +8,7 @@ import Theme from '../components/Theme'
 import TimeSection from '../components/TimeSection'
 import Location from '../components/Location'
 import Speakers from '../components/Speakers'
+import Timeline from '../components/Timeline'
 
 const Home: NextPage = () => {
   return (
