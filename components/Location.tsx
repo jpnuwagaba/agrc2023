@@ -6,7 +6,7 @@ import React from 'react'
 
 const Location = () => {
   return (
-    <div id='about' className='w-[90%] mx-auto my-16 md:w-[80%]'>
+    <div id='contact' className='w-[90%] mx-auto my-16 md:w-[80%]'>
       <div className="grid gap-4 lg:grid-cols-2 lg:gap-12">
         <div className='lg:col-span-1'>
           <div className='mb-12'>
