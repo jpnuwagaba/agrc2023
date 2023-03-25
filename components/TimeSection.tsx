@@ -6,7 +6,7 @@ import Timer from './Timer'
 
 const TimeSection = () => {
   return (
-    <div className='w-[80%] mx-auto py-16 md:w-[80%]'>
+    <div id='schedule' className='w-[80%] mx-auto pt-12 md:pt-32 md:w-[80%]'>
       <div className="text-center text-darkGreen font-bold text-2xl mb-16 md:text-4xl">Conference Timeline</div>
       <div className="flex flex-col items-center">
         <div className="flex flex-col gap-16 lg:gap-32 lg:flex-row">
