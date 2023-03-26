@@ -41,19 +41,19 @@ const Timer = () => {
     <div className="flex gap-4">
       <div className="text-center">
         <p className="font-bold text-2xl text-lightRed md:text-3xl lg:text-4xl">{timeLeft.days}</p>
-        <p>Days</p>
+        <p className="text-sm font-bold text-gray-700">Days</p>
       </div>
       <div className="text-center">
         <p className="font-bold text-2xl text-lightRed md:text-3xl lg:text-4xl">{timeLeft.hours}</p>
-        <p>Hours</p>
+        <p className="text-sm font-bold text-gray-700">Hours</p>
       </div>
       <div className="text-center">
         <p className="font-bold text-2xl text-lightRed md:text-3xl lg:text-4xl">{timeLeft.minutes}</p>
-        <p>Minutes</p>
+        <p className="text-sm font-bold text-gray-700">Minutes</p>
       </div>
       <div className="text-center">
         <p className="font-bold text-2xl text-lightRed md:text-3xl lg:text-4xl">{timeLeft.seconds}</p>
-        <p>Seconds</p>
+        <p className="text-sm font-bold text-gray-700">Seconds</p>
       </div>
     </div>
   );

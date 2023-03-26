@@ -14,7 +14,7 @@ const TimeSection = () => {
           <div className="shadow-xs">
               <div className="flex flex-col items-center shadow-lg p-5">
                 <div className='flex flex-col items-center'>
-                  <div className="font-bold text-xl">Register Today</div>
+                  <div className="font-bold text-xl text-gray-700">Register Today</div>
                 </div>
                 <br />
                 <Timer />

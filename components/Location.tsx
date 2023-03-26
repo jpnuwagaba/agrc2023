@@ -11,14 +11,14 @@ const Location = () => {
         <div className='lg:col-span-1'>
           <div className='mb-12'>
             <div className="text-2xl text-darkGreen font-bold lg:text-2xl">Location</div>
-            <div className="text-lg my-2">Conference Hall, College of Engineering Design Art &Technology, Makerere University</div>
-            <div className="text-lg">Kampala, Uganda</div>
+            <div className="font-bold text-gray-700 my-2">Conference Hall, College of Engineering Design Art &Technology, Makerere University</div>
+            <div className="font-bold text-gray-700">Kampala, Uganda</div>
           </div>
           <div className='mb-12'>
             <div className="text-2xl text-darkGreen font-bold lg:text-2xl">Contact Us</div>
             <div className='flex flex-col items-start'>
               <div className="flex gap-6 my-6 items-center">
-                <div className="font-bold">Social Links: </div>
+                <div className="font-bold text-gray-700">Social Links: </div>
                 {/* <MdOutlineAlternateEmail size={'1.4em'} color={'darkRed'} /> */}
                 <BsTwitter size={'1.4em'} color={'#00acee'} />
                 <a href="https://youtube.com/@geomaticsmak2774" target={'_blank'}><AiFillYoutube size={'1.4em'} color={'#FF0000'} /></a>
