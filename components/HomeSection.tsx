@@ -8,7 +8,7 @@ const HomeSection = () => {
           <div className="text-xl md:text-4xl font-bold uppercase">7th advances in <span className='text-orange'>geomatics</span> research <span className='bg-darkGreen text-white p-1 text-xl md:text-4xl text-center'>conference</span></div>
           <hr className='my-6' />
           {/* <div className="text-xl md:text-3xl font-bold uppercase">THEME: GEOMATICS EXCELLENCE FOR A MODERN SOCIETY - SUSTAINABLE FIT FOR PURPOSE SOLUTIONS FOR THE 21ST CENTURY</div> */}
-          <div className="text-xl md:text-2xl text-orange font-bold my-4 uppercase">11 <sup>th</sup> - 12 <sup>th</sup> august, 2023</div>
+          <div className="text-xl md:text-2xl text-orange font-bold my-4 uppercase">10 <sup>th</sup> - 11 <sup>th</sup> august, 2023</div>
           <div className='flex justify-around md:justify-start'>
             <div className='flex items-center gap-3 uppercase'>
               {/* <div className="rounded-xl">call for abstracts</div> */}

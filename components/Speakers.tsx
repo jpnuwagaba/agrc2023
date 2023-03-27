@@ -15,7 +15,7 @@ const Speakers = () => {
           email='sample@gmail.com'
         />
         <Speaker 
-          name='Dr Moses Musinguzi'
+          name='Prof Moses Musinguzi'
           image='musinguzi.jpg'
           typeOfSpeech='Keynote speech'
           telephone='+256 712345678'
