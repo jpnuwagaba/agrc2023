@@ -13,7 +13,7 @@ const Menu = () => {
       </ul>
       <div className="flex flex-col items-center">
         <div className="flex flex-row gap-2 my-12">
-          <Link href={''} className='bg-darkGreen text-sm w-36 text-center text-white px-4 py-2 cursor-pointer rounded-lg'>Register</Link>
+          <Link href={'registration'} className='bg-darkGreen text-sm w-36 text-center text-white px-4 py-2 cursor-pointer rounded-lg'>Register</Link>
           <Link href={''} className='bg-darkRed text-sm w-36 text-center text-white px-4 py-2 cursor-pointer rounded-lg'>Submit Abstract</Link>
         </div>
       </div>
