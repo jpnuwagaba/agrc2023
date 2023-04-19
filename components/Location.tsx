@@ -25,7 +25,7 @@ const Location = () => {
                 <FaLinkedinIn size={'1.4em'} color={'#0072b1 '} />
               </div>
               <div className='grid grid-cols-1 md:grid-cols-2 gap-2 text-sm'>
-                <div className="bg-darkGreen font-bold text-center text-white px-3 py-2 w-full rounded-lg w-full">agrc@cedat.mak.ac.ug</div>
+                <div className="bg-darkGreen font-bold text-center text-white px-3 py-2 w-full rounded-lg w-full">agrc2023@mak.ac.ug</div>
                 <div className="bg-darkRed font-bold text-center text-white px-3 py-2 w-full rounded-lg w-full">+256 784 614675</div>
               </div>
             </div>

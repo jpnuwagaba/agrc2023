@@ -25,7 +25,6 @@ const Home: NextPage = () => {
           content='Advances in Geomatics Research Conference is a biennial conference organized to highlight, promote and encourage scholarship in the various Geomatics sub-disciplines e.g., Location-based services, Engineering Surveying, GIS, Remote Sensing, Land Management, integrated spatial planning, etc taking place locally, regionally and internationally.'
         />
       </Head>
-      <Navbar />
       <div className='pt-12 md:pt-24'>
       <HomeSection />
       <Theme />
@@ -35,7 +34,6 @@ const Home: NextPage = () => {
       <Speakers />
       <Location />
       </div>
-      <Footer />
     </div>
   )
 }
