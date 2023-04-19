@@ -9,7 +9,7 @@ const Timer = () => {
   });
 
   useEffect(() => {
-    const countdownDate = new Date("August 11, 2023 00:00:00").getTime();
+    const countdownDate = new Date("August 3, 2023 00:00:00").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();

@@ -15,25 +15,25 @@ const Timeline = () => {
           </div>
           <div className=' border-l-2 border-darkGreen'>
             <TimelineEl
-              date={`30th May`}
+              date={`17th June`}
               event={'Acceptance of Abstracts'}
             />
           </div>
           <div className=' border-l-2 border-darkGreen'>
             <TimelineEl
               date={`30th June`}
-              event={'Full Papers for Publication'}
+              event={'Deadline for submission of Extended Abstracts'}
             />
           </div>
           <div className=' border-l-2 border-darkGreen'>
             <TimelineEl
-              date={`7th -9th August`}
-              event={'Pre-Conference Workshops & Tutorials'}
+              date={`31st July - 2nd August`}
+              event={'Pre-Conference Workshops'}
             />
           </div>
           <div className=' border-l-2 border-white'>
             <TimelineEl
-              date={`10th -11th August`}
+              date={`3rd - 4th August`}
               event={'The Conference'}
             />
           </div>

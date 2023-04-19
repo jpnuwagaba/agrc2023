@@ -3,6 +3,7 @@ import { BiAlarm } from 'react-icons/bi'
 import { HiOutlineBuildingOffice } from 'react-icons/hi2'
 import Timeline from './Timeline'
 import Timer from './Timer'
+import Link from 'next/link'
 
 const TimeSection = () => {
   return (
@@ -18,7 +19,7 @@ const TimeSection = () => {
                 </div>
                 <br />
                 <Timer />
-                <div className="w-full rounded-lg bg-darkGreen text-center p-2 text-white my-5 cursor-pointer">Register Here</div>
+                <Link href={'registration'} className="w-full rounded-lg bg-darkGreen text-center p-2 text-white my-5 cursor-pointer">Register Here</Link>
               </div>
             </div>
             <div className="flex flex-col justify-between items-start gap-8">

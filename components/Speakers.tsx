@@ -10,6 +10,7 @@ const Speakers = () => {
         <Speaker 
           name='Prof Anthony Gidudu'
           image='gidudu.png'
+          institution='Makerere University'
           typeOfSpeech='Keynote speech'
           telephone='+256 712345678'
           email='sample@gmail.com'
@@ -17,6 +18,7 @@ const Speakers = () => {
         <Speaker 
           name='Prof Moses Musinguzi'
           image='musinguzi.jpg'
+          institution='Makerere University'
           typeOfSpeech='Keynote speech'
           telephone='+256 712345678'
           email='sample@gmail.com'
