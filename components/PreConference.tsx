@@ -10,7 +10,7 @@ const PreConference = () => {
           <FaPeopleCarry size={'2.5em'} color={'white'} />
           <div className='text-white'>
             <div className="text-xl font-bold uppercase">pre-conference workshops</div>
-            <div className="my-1">31st July - 2nd August, 2023</div>
+            <div className="my-1">14<sup>th</sup>, 15<sup>th</sup>, 16<sup>th</sup> August, 2023</div>
             <ul className='text-sm uppercase'>
               <li className='mt-2 list-disc'>african reference frame (afref) and gnss - cors and its applications</li>
               <li className='mt-2 list-disc'>gmes</li>
@@ -21,7 +21,7 @@ const PreConference = () => {
           <FaChalkboardTeacher size={'2.5em'} color={'white'} />
           <div className='text-white'>
             <div className="text-xl font-bold uppercase">pre-conference tutorials</div>
-            <div className="my-1">31st July - 2nd August, 2023</div>
+            <div className="my-1">14<sup>th</sup>, 15<sup>th</sup>, 16<sup>th</sup> August, 2023</div>
             <ul className='text-sm uppercase'>
               <li className='mt-2 list-disc'>introduction to fit-for-purpose land aministration for land professionals</li>
               <li className='mt-2 list-disc'>fundamentals of geographic information systems</li>

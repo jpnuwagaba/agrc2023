@@ -27,13 +27,13 @@ const Timeline = () => {
           </div>
           <div className=' border-l-2 border-darkGreen'>
             <TimelineEl
-              date={`31st July - 2nd August`}
+              date={`14th, 15th, 16th August`}
               event={'Pre-Conference Workshops'}
             />
           </div>
           <div className=' border-l-2 border-white'>
             <TimelineEl
-              date={`3rd - 4th August`}
+              date={`17th - 18th August`}
               event={'The Conference'}
             />
           </div>
