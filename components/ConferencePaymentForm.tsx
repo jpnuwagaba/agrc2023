@@ -3,7 +3,7 @@ import React from 'react'
 const ConferencePaymentForm = () => {
   return (
     <div className='flex flex-col gap-4'>
-      <div className='font-bold text-xl'>Conference & Pre-Conference fee; $100 or 300,000 UShs</div>
+      <div className='font-bold text-xl'>Conference & Pre-Conference fee; $80 or 300,000 UShs</div>
       
       <div className="font-bold text-xl">Payment Options</div>
       <div>
