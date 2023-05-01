@@ -4,10 +4,11 @@ import { HiOutlineBuildingOffice } from 'react-icons/hi2'
 import Timeline from './Timeline'
 import Timer from './Timer'
 import Link from 'next/link'
+import PreConference from './PreConference'
 
 const TimeSection = () => {
   return (
-    <div id='schedule' className='w-[80%] mx-auto pt-12 md:pt-32 md:w-[80%]'>
+    <div id='timeline' className='w-[80%] mx-auto py-24 md:w-[80%]'>
       <div className="text-center text-darkGreen font-bold text-2xl mb-16 md:text-4xl">Conference Timeline</div>
       <div className="flex flex-col items-center">
         <div className="flex flex-col gap-16 lg:gap-32 lg:flex-row">
@@ -31,8 +32,8 @@ const TimeSection = () => {
               <div className="flex flex-row gap-3">
                 <HiOutlineBuildingOffice size={'3em'} color={'orange'} />
                 <div>
-                  <div className="text-darkGreen font-bold">Conference Hall, CEDAT</div>
-                  <div className="text-sm font-bold text-gray-600">Makerere University</div>
+                  <div className="text-darkGreen font-bold">Kampala, Uganda</div>
+                  <div className="text-sm font-bold text-gray-600">Venue to be communicated</div>
                 </div>
               </div>
               <div className="flex flex-row gap-3">
@@ -48,6 +49,7 @@ const TimeSection = () => {
           <Timeline />
         </div>
       </div>
+      <PreConference />
     </div>
   )
 }

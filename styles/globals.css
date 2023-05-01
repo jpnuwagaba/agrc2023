@@ -30,3 +30,4 @@ html, body {
 .timeline-el::before {
   background-color: var(--bg-color);
 }
+

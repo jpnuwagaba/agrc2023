@@ -11,6 +11,8 @@ import Speakers from '../components/Speakers'
 import Timeline from '../components/Timeline'
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar'
+import SideNavbar from '../components/SideNavbar'
+import ConferenceRegistrationForm from '../components/ConferenceRegistrationForm'
 
 
 
@@ -25,15 +27,14 @@ const Home: NextPage = () => {
           content='Advances in Geomatics Research Conference is a biennial conference organized to highlight, promote and encourage scholarship in the various Geomatics sub-disciplines e.g., Location-based services, Engineering Surveying, GIS, Remote Sensing, Land Management, integrated spatial planning, etc taking place locally, regionally and internationally.'
         />
       </Head>
-      <div className='pt-12 md:pt-24'>
       <HomeSection />
       <Theme />
-      <TimeSection />
       <AboutSection />
-      <PreConference />
+      <TimeSection />
       <Speakers />
+      <ConferenceRegistrationForm />
       <Location />
-      </div>
+      <SideNavbar />
     </div>
   )
 }

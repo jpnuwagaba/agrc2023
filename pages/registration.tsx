@@ -15,7 +15,7 @@ const registration = () => {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <div>
-        <RegistrationPageNav />
+        {/* <RegistrationPageNav /> */}
         <div className='fixed w-full opacity-90 z-50 bottom-0'><RegistrationStatus /></div>
         <div className='w-[90%] mx-auto md:w-[80%]'>
           <ConferenceRegistrationForm />
