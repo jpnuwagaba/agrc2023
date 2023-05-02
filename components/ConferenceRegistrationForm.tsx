@@ -41,7 +41,7 @@ const ConferenceRegistrationForm = () => {
             </div>
             <div className='flex flex-col gap-1'>
               <label className='text-sm font-bold text-gray-700' htmlFor="fullname">Full Name</label>
-              <input className='border-gray-600 border-[1px] rounded-md h-12 p-2 w-[300px] md:w-[500px]'
+              <input className='border-gray-600 border-[1px] rounded-md h-12 p-2 md:w-[500px]'
                 type="text"
                 value={fullName}
                 // onChange={(e) => setName(e.target.value)}

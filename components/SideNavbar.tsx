@@ -29,8 +29,8 @@ const SideNavbar = () => {
 
   return (
     <>
-      <div  style={{ display: showSideNav ? 'block' : 'none' }} className="fixed z-50 bottom-5 lg:top-[50%] lg:-translate-y-[50%] right-5 transform transition-transform duration-500 ease-in-out scale-90">
-        <div className="flex lg:flex-col gap-1 scale-75 lg:scale-100">
+      <div  style={{ display: showSideNav ? 'block' : 'none' }} className="fixed z-50 bottom-5 lg:top-[50%] lg:-translate-y-[50%] right-5 transform transition-transform duration-500 ease-in-out scale-90 p-2 rounded-full shadow-md lg:shadow-none lg:bg-none">
+        <div className="flex lg:flex-col gap-2 scale-75 lg:scale-100">
           <a href={'#'} className="flex flex-row gap-2 items-center bg-darkRed p-2 text-white rounded-full">
             <BiArrowToTop size={'1.8rem'} />
           </a>

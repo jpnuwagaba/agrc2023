@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import React from 'react'
 import { app, database } from '../firebaseConfig'
-import {} from 'firebase/database'
+// import {} from 'firebase/database'
 
 const SubmitAbstractForm = () => {
   const [title, setTitle] = useState('');
@@ -9,17 +9,30 @@ const SubmitAbstractForm = () => {
   const [email, setEmail] = useState('');
   const [affiliation, setAffiliation] = useState('');
   const [country, setCountry] = useState('');
-  const [files, setFiles] = useState([]);
-
-  const [areasOfResearch, setAreasOfResearch] = useState([]);
-
+  const [files, setFiles] = useState<File[]>([]);
+  const [areasOfResearch, setAreasOfResearch] = useState<string[]>([]);
   const [errorMsg, setErrorMsg] = useState(null);
 
   // handle submit
-  const handleSubmit = (e: {
-    target: HTMLFormElement | undefined; preventDefault: () => void;
-  }) => {
-    e.preventDefault();
+  // const handleSubmit = (e: {
+  //   target: HTMLFormElement | undefined; preventDefault: () => void;
+  // }) => {
+  //   e.preventDefault();
+  //   setTitle('');
+  //   setName('');
+  //   setEmail('');
+  //   setAffiliation('');
+  //   setCountry('');
+  //   setAreasOfResearch([]);
+  //   setFiles([]);
+
+  //   const data = new FormData(e.target);
+  //   console.log(Object.fromEntries(data.entries()));
+  // }
+
+  const handleSubmit: React.FormEventHandler<HTMLFormElement> = event => {
+    event.preventDefault();
+    // Handle form submission
     setTitle('');
     setName('');
     setEmail('');
@@ -27,32 +40,49 @@ const SubmitAbstractForm = () => {
     setCountry('');
     setAreasOfResearch([]);
     setFiles([]);
+  };
+  
 
-    const data = new FormData(e.target);
-    console.log(Object.fromEntries(data.entries()));
-  }
+  // const handleFileSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   const newFiles = [...files, ...Array.from(e.target.files)] : [...files];
+  //   setFiles(newFiles);
+  // }
+  
 
-  const handleFileSubmit = (e: { target: { files: any; }; }) => {
-    const newFiles = [...files, ...e.target.files];
+  const handleFileSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newFiles = e.target.files ? [...files, ...Array.from(e.target.files)] : [...files];
     setFiles(newFiles);
   }
+  
 
   const handleFileRemove = (indexToRemove: number) => {
-    setFiles((prevFiles) =>
+    setFiles((prevFiles: any[]) =>
       prevFiles.filter((_, index) => index !== indexToRemove)
     );
   };
 
-  const handleAreaOfResearchChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const options = event.target.options;
-    const selectedAreasOfResearch = [];
-    for (let i = 0; i < options.length; i++) {
-      if (options[i].selected) {
-        selectedAreasOfResearch.push(options[i].value);
+  // const handleAreaOfResearchChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+  //   const options = event.target.options;
+  //   const selectedAreasOfResearch = [];
+  //   for (let i = 0; i < options.length; i++) {
+  //     if (options[i].selected) {
+  //       selectedAreasOfResearch.push(options[i].value);
+  //     }
+  //   }
+  //   setAreasOfResearch(selectedAreasOfResearch);
+  // };
+
+  const handleAreaOfResearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    setAreasOfResearch(prevState => {
+      if (prevState.includes(value)) {
+        return prevState.filter(item => item !== value);
+      } else {
+        return [...prevState, value];
       }
-    }
-    setAreasOfResearch(selectedAreasOfResearch);
+    });
   };
+  
 
   const areasOfResearchList = [
     "GIS Applications",
@@ -114,7 +144,7 @@ const SubmitAbstractForm = () => {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             required
-          >
+          > 
             <option value="">Select a title</option>
             <option value="Prof">Prof</option>
             <option value="Mr">Mr</option>

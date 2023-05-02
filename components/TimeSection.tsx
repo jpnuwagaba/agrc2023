@@ -20,7 +20,7 @@ const TimeSection = () => {
                 </div>
                 <br />
                 <Timer />
-                <Link href={'registration'} className="w-full rounded-lg bg-darkGreen text-center p-2 text-white my-5 cursor-pointer">Register Here</Link>
+                <a href={'#registration'} className="w-full rounded-lg bg-darkGreen text-center p-2 text-white my-5 cursor-pointer">Register</a>
               </div>
             </div>
             <div className="flex flex-col justify-between items-start gap-8">
