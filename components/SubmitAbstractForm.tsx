@@ -40,6 +40,9 @@ const SubmitAbstractForm = () => {
     setCountry('');
     setAreasOfResearch([]);
     setFiles([]);
+
+    const data = new FormData(event.target as HTMLFormElement);
+    console.log(Object.fromEntries(data.entries()));
   };
   
 
