@@ -9,7 +9,7 @@ const Timeline = () => {
         <div className="flex flex-col items-start">
           <div className=' border-l-2 border-darkGreen'>
             <TimelineEl
-              date={`13th March - 13th May`}
+              date={`13th March - 15th June`}
               event={'Call for Abstracts'}
             />
           </div>
@@ -29,6 +29,12 @@ const Timeline = () => {
             <TimelineEl
               date={`14th, 15th, 16th August`}
               event={'Pre-Conference Workshops'}
+            />
+          </div>
+          <div className=' border-l-2 border-white'>
+            <TimelineEl
+              date={`16th August`}
+              event={'Public Dialogue'}
             />
           </div>
           <div className=' border-l-2 border-white'>

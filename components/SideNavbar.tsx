@@ -40,9 +40,9 @@ const SideNavbar = () => {
           <a href={'#timeline'} className="flex flex-row gap-2 items-center bg-darkRed p-2 text-white rounded-full">
             <AiOutlineSchedule size={'1.8rem'} />
           </a>
-          <a href={'#speakers'} className="flex flex-row gap-2 items-center bg-darkRed p-2 text-white rounded-full">
+          {/* <a href={'#speakers'} className="flex flex-row gap-2 items-center bg-darkRed p-2 text-white rounded-full">
             <TbPodium size={'1.8rem'} />
-          </a>
+          </a> */}
           <a href={'#registration'} className="flex flex-row gap-2 items-center bg-darkRed p-2 text-white rounded-full">
             <BsPencilSquare size={'1.8rem'} />
           </a>
