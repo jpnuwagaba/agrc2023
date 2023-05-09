@@ -31,7 +31,7 @@ const Timeline = () => {
               event={'Pre-Conference Workshops'}
             />
           </div>
-          <div className=' border-l-2 border-white'>
+          <div className=' border-l-2 border-darkGreen'>
             <TimelineEl
               date={`16th August`}
               event={'Public Dialogue'}
