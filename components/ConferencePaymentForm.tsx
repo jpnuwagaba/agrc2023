@@ -33,11 +33,11 @@ const ConferencePaymentForm = () => {
           <div className='flex flex-row gap-2 mt-3'>
             <div className="flex flex-row items-center justify-between bg-gray-100 inline-block p-4 rounded-md w-60 h-16">
               <img className='w-10' src="/assets/airtel-money.png" alt="" />
-              <div className='font-bold'>+256 700 670395</div>
+              <div className='font-bold'>+256 706 712830</div>
             </div>
             <div className="flex flex-row items-center justify-between bg-gray-100 inline-block p-4 rounded-md w-60 h-16">
               <img className='w-10' src="/assets/mtn_momo.png" alt="" />
-              <div className='font-bold'>+256 781 147096</div>
+              <div className='font-bold'>+256 775 702 841</div>
             </div>
           </div>
         </div>
