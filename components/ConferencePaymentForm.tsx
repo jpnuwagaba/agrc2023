@@ -4,43 +4,37 @@ const ConferencePaymentForm = () => {
   return (
     <div className='flex flex-col gap-4'>
       <div className='font-bold text-xl'>Conference & Pre-Conference fee; $80 or 300,000 UShs</div>
-
       <div className="font-bold text-xl">Payment Options</div>
-      <div>
-        <div className="text-gray-700">Payment can be made via Mobile Money or physically at the Department of Geomatics and Land Management in the new CEDAT building, 2<sup>nd</sup> Floor, Room 3029.</div>
-        <div className="text-gray-700">This payment covers the three days for the Pre-Conference Workshops and the Conference.</div>
-      </div>
       <div className='flex flex-col gap-3'>
-        {/* <button className='h-24 border-2 rounded-md flex items-center justify-between w-[300px] md:w-[500px] p-3'>
-          <div className='text-sm'>Credit/Debit Card</div>
-          <img className='w-12' src="/assets/creditcard.png" alt="" />
-        </button>
-        <button className='h-24 border-2 rounded-md flex items-center justify-between w-[300px] md:w-[500px] p-3'>
-          <div className='text-sm'>PayPal</div>
-          <img className='w-12' src="/assets/paypal.png" alt="" />
-        </button> */}
-        {/* <button className='h-24 border-2 rounded-md flex items-center justify-between w-[300px] md:w-[500px] p-3'>
-          <div className='text-sm'>MTN MoMo</div>
-          <img className='w-12' src="/assets/mtn_momo.png" alt="" />
-        </button>
-        <button className='h-24 border-2 rounded-md flex items-center justify-between w-[300px] md:w-[500px] p-3'>
-          <div className='text-sm'>Airtel Money</div>
-          <img className='w-12' src="/assets/airtel-money.png" alt="" />
-        </button> */}
         <div className='flex flex-col gap-2'>
-          <div className="font-bold mb-2">Mobile Money Options</div>
-          <div>Payment can be made to the numbers below registered to Ms. Flavia Nazziwa</div>
-          <div className='flex flex-row gap-2 mt-3'>
-            <div className="flex flex-row items-center justify-between bg-gray-100 inline-block p-4 rounded-md w-60 h-16">
+          <div className='grid grid-cols-2 gap-2'>
+            <div className='col-span-2 bg-gray-100 inline-block p-5 rounded-md'>
+              <div className="flex flex-col md:flex-row items-start gap-5">
+                <img className='h-12' src="/assets/stanchart.webp" alt="" />
+                <div className='uppercase'>
+                  <div className='font-bold uppercase text-gray-700'>standard chartered bank</div>
+                  <div className='text-sm'><span className='font-bold text-gray-700'>account name: </span>Makerere University College of Engineering, Design, Art and Technology</div>
+                  <div className='text-sm'><span className='font-bold text-gray-700'>account number: </span>8705612273400</div>
+                  <div className='text-sm'><span className='font-bold text-gray-700'>swift code: </span>SCBLUGKA</div>
+                  <div className='text-sm'><span className='font-bold text-gray-700'>physical branch: </span>Speke Road</div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-row items-center justify-between bg-gray-100 inline-block p-5 rounded-md h-16">
               <img className='w-10' src="/assets/airtel-money.png" alt="" />
               <div className='font-bold'>+256 706 712830</div>
             </div>
-            <div className="flex flex-row items-center justify-between bg-gray-100 inline-block p-4 rounded-md w-60 h-16">
+            <div className="flex flex-row items-center justify-between bg-gray-100 inline-block p-5 rounded-md h-16">
               <img className='w-10' src="/assets/mtn_momo.png" alt="" />
               <div className='font-bold'>+256 775 702 841</div>
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <div className="text-gray-700 text-sm">Payment can be made via Standard Chartered Bank or Mobile Money or physically at the Department of Geomatics and Land Management in the new CEDAT building, 2<sup>nd</sup> Floor, Room 3029.</div>
+        <div className="text-gray-700 text-sm">This payment covers the three days for the Pre-Conference Workshops and the Conference.</div>
+        <div className='text-gray-700 text-sm'>Payment can be made to the numbers below registered to Ms. Flavia Nazziwa</div>
       </div>
     </div>
   )

@@ -1,89 +1,109 @@
-import { useState } from 'react'
-import ConferencePaymentForm from '../components/ConferencePaymentForm'
-import React from 'react'
+// install nodemailer 
+// install formik
+
+import React from 'react';
+import { useFormik } from 'formik';
+import ConferencePaymentForm from './ConferencePaymentForm';
 
 const ConferenceRegistrationForm = () => {
+  const formik = useFormik({
+    initialValues: {
+      title: '',
+      name: '',
+      email: '',
+      organization: '',
+      country: ''
+    },
+    onSubmit: async (values: any) => {
+      const { title, name, email, organization, country, message, attachment } = values;
 
-  const [fullName, setFullName] = useState()
-  const [title, setTitle] = useState()
-  const [email, setEmail] = useState()
-  const [organization, setOrganization] = useState()
-  const [country, setCountry] = useState()
+      const formData = new FormData();
+      formData.append('title', title);
+      formData.append('name', name);
+      formData.append('email', email);
+      formData.append('organization', organization);
+      formData.append('country', country);
+      formData.append('message', message);
+      formData.append('attachment', attachment);
 
-  const handleSubmit = () => {
-    console.log('men');
+      try {
+        const response = await fetch('/api/send-email', {
+          method: 'POST',
+          body: formData,
+        });
 
-  }
+        if (response.ok) {
+          console.log('Email sent successfully');
+        } else {
+          console.log('Failed to send email');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    },
+  });
 
   return (
-    <div id='registration' className='py-5 md:py-16 w-[90%] md:w-[80%] mx-auto flex flex-col items-center'>
-      <div className="md:text-center text-2xl font-bold text-darkGreen mb-6 md:mb-12 lg:text-4xl">Register Online and Pay Mobile Money</div>
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-16">
-        {/* personal details */}
-        <div>
-          <div className='font-bold text-xl mb-3'>Personal Details</div>
-          <form className='flex flex-col gap-4 mb-6' action="">
-            <div className='flex flex-col gap-1'>
-              <label className='text-sm font-bold text-gray-700' htmlFor="title">Title</label>
-              <select className='border-gray-600 border-[1px] rounded-md h-12 p-2 md:w-[500px]'
-                // type="text"
-                value={title}
-                // onChange={(e) => setTitle(e.target.value)}
-
-                required
-              >
-                <option value="">Select your title</option>
-                <option value="mr">Mr.</option>
-                <option value="ms">Ms.</option>
-                <option value="dr">Dr.</option>
-                <option value="prof">Prof.</option>
-              </select>
-            </div>
-            <div className='flex flex-col gap-1'>
-              <label className='text-sm font-bold text-gray-700' htmlFor="fullname">Full Name</label>
-              <input className='border-gray-600 border-[1px] rounded-md h-12 p-2 md:w-[500px]'
-                type="text"
-                value={fullName}
-                // onChange={(e) => setName(e.target.value)}
-                required
-              />
-            </div>
-            <div className='flex flex-col gap-1'>
-              <label className='text-sm font-bold text-gray-700' htmlFor="email">Email</label>
-              <input className='border-gray-600 border-[1px] rounded-md h-12 p-2 md:w-[500px]'
-                type="text"
-                value={email}
-                // onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
-            <div className='flex flex-col gap-1'>
-              <label className='text-sm font-bold text-gray-700' htmlFor="organization">Organization</label>
-              <input className='border-gray-600 border-[1px] rounded-md h-12 p-2 md:w-[500px]'
-                type="text"
-                value={organization}
-                // onChange={(e) => setOrganization(e.target.value)}
-                required
-              />
-            </div>
-            <div className='flex flex-col gap-1'>
-              <label className='text-sm font-bold text-gray-700' htmlFor="country">Country</label>
-              <input className='border-gray-600 border-[1px] rounded-md h-12 p-2 md:w-[500px]'
-                type="text"
-                value={country}
-                // onChange={(e) => setCountry(e.target.value)}
-                required
-              />
-            </div>
-          </form>
-          <button onClick={handleSubmit} className="rounded-md bg-darkGreen cursor-pointer inline py-2 px-3 text-sm font-bold text-white">Send Details</button>
-        </div>
-
-        {/* payment */}
+    <div id='registration' className='w-[90%] mx-auto md:w-[80%] my-12 md:my-28'>
+      <div className="md:text-center text-2xl font-bold text-darkGreen mb-6 md:mb-12 lg:text-4xl">Registration and Payment</div>
+      <div className=' grid gap-12 grid-cols-1 lg:grid-cols-2'>
+        <form className='flex flex-col gap-4' onSubmit={formik.handleSubmit}>
+          <div className='flex flex-col ga-3'>
+            <label className='font-bold text-sm text-gray-600' htmlFor="name">Title:</label>
+            <input className='border-2 border-gray-300 rounded-lg p-1'
+              id="title"
+              name="title"
+              type="text"
+              onChange={formik.handleChange}
+              value={formik.values.title}
+            />
+          </div>
+          <div className='flex flex-col ga-3'>
+            <label className='font-bold text-sm text-gray-600' htmlFor="name">Name:</label>
+            <input className='border-2 border-gray-300 rounded-lg p-1'
+              id="name"
+              name="name"
+              type="text"
+              onChange={formik.handleChange}
+              value={formik.values.name}
+            />
+          </div>
+          <div className='flex flex-col ga-3'>
+            <label className='font-bold text-sm text-gray-600' htmlFor="email">Email:</label>
+            <input className='border-2 border-gray-300 rounded-lg p-1'
+              id="email"
+              name="email"
+              type="email"
+              onChange={formik.handleChange}
+              value={formik.values.email}
+            />
+          </div>
+          <div className='flex flex-col ga-3'>
+            <label className='font-bold text-sm text-gray-600' htmlFor="email">Organization:</label>
+            <input className='border-2 border-gray-300 rounded-lg p-1'
+              id="organization"
+              name="organization"
+              type="text"
+              onChange={formik.handleChange}
+              value={formik.values.organization}
+            />
+          </div>
+          <div className='flex flex-col ga-3'>
+            <label className='font-bold text-sm text-gray-600' htmlFor="email">Country:</label>
+            <input className='border-2 border-gray-300 rounded-lg p-1'
+              id="country"
+              name="country"
+              type="text"
+              onChange={formik.handleChange}
+              value={formik.values.country}
+            />
+          </div>                    
+          <button className='bg-darkGreen px-3 py-2 rounded text-sm font-bold mt-5 text-white inline' type="submit">Submit</button>
+        </form>
         <ConferencePaymentForm />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ConferenceRegistrationForm
+export default ConferenceRegistrationForm;

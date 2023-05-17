@@ -38,7 +38,7 @@ const Speakers = () => {
           telephone='+256 712345678'
           email='sample@gmail.com'
         />
-        <Speaker
+        {/* <Speaker
           name='Prof Anthony Gidudu'
           image='gidudu.png'
           affiliation='Makerere University'
@@ -55,7 +55,7 @@ const Speakers = () => {
           typeOfSpeech='Keynote speech'
           telephone='+256 712345678'
           email='sample@gmail.com'
-        />
+        /> */}
       </div>
     </div>
   )
