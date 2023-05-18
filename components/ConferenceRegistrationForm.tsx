@@ -45,7 +45,7 @@ const ConferenceRegistrationForm = () => {
 
   return (
     <div id='registration' className='w-[90%] mx-auto md:w-[80%] my-12 md:my-28'>
-      <div className="md:text-center text-2xl font-bold text-darkGreen mb-6 md:mb-12 lg:text-4xl">Registration and Payment</div>
+      <div className="md:text-center text-2xl font-bold text-darkGreen mb-6 md:mb-12 lg:text-4xl">Payment Options</div>
       <div className=' flex flex-col items-center max-w-[700px] mx-auto'>
         {/* <form className='flex flex-col gap-4' onSubmit={formik.handleSubmit}>
           <div className='flex flex-col ga-3'>
