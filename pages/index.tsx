@@ -13,7 +13,7 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar'
 import SideNavbar from '../components/SideNavbar'
 import ConferenceRegistrationForm from '../components/ConferenceRegistrationForm'
-import TestForm from '../components/TestForm'
+// import TestForm from '../components/TestForm'
 
 
 
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
       <TimeSection />
       <Speakers />
       <ConferenceRegistrationForm />
-      <TestForm />
+      {/* <TestForm /> */}
       <Location />
       <SideNavbar />
     </div>
