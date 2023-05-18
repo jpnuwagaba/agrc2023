@@ -1,43 +1,89 @@
-import type { NextApiRequest, NextApiResponse } from "next";
-import { MailtrapClient } from 'mailtrap'
+// first code 
+import { NextApiRequest, NextApiResponse } from "next";
+import {MailtrapClient} from 'mailtrap'
 
-const TOKEN = 'b3a5975de5fe2d450c83c792d8e59282'
-const ENDPOINT = 'https://send.api.mailtrap.io/'
+const TOKEN = 'b3a5975de5fe2d450c83c792d8e59282';
+const ENDPOINT = 'https://send.api.mailtrap.io/';
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  if (req.method == 'POST') {
+    try {
+      const {fullName, email, title, organization, country} = req.body;
+      const client = new MailtrapClient({endpoint: ENDPOINT, token: TOKEN});
+      const sender = {
+        email: 'mailtrap@peerdesk.app',
+        name: 'Mailtrap Test by JP'
+      };
+      const recipients = [
+        {
+          email: email,
+        }
+      ];
 
-  // console.log(" ============> ", req.body);
+      await client.send({
+        from: sender,
+        to: recipients,
+        subject: 'Why are you refusing!',
+        text: 'COngrats, on your first email-send!',
+        category: 'Integration Test',
+      });
 
-  const {name} = req.body
-  console.log("name =============> ", name)
-  
+      console.log(req.body);      
 
-  const client = new MailtrapClient({ endpoint: ENDPOINT, token: TOKEN });
-
-  const sender = {
-    email: "mailtrap@peerdesk.app",
-    name: "Mailtrap Test",
-  };
-  const recipients = [
-    {
-      email: req.body.email,
+      res.status(200).json({message: 'Email sent successfully'});
+    } catch (error) {
+      console.error('Error sending email:', error);
+      res.status(500).json({error: 'Failed to send'});
     }
-  ];
-
-  client
-    .send({
-      from: sender,
-      to: recipients,
-      subject: "You are awesome!",
-      text: "Congrats for sending test email with Mailtrap!",
-      category: "Integration Test",
-    })
-    .then(console.log, console.error);
-
+  } else {
+    res.status(405).json({error: 'Method Not Allowed'});
+  }
 }
+
+
+// second code
+
+
+// import type { NextApiRequest, NextApiResponse } from "next";
+// import { MailtrapClient } from 'mailtrap'
+
+// const TOKEN = 'b3a5975de5fe2d450c83c792d8e59282'
+// const ENDPOINT = 'https://send.api.mailtrap.io/'
+
+// export default async function handler(
+//   req: NextApiRequest,
+//   res: NextApiResponse
+// ) {
+
+//   const { fullName, email, title, organization, country } = req.body;
+//   // console.log("name =============> ", name)  
+
+//   const client = new MailtrapClient({ endpoint: ENDPOINT, token: TOKEN });
+
+//   const sender = {
+//     email: "mailtrap@peerdesk.app",
+//     name: "Mailtrap Test",
+//   };
+//   const recipients = [
+//     {
+//       email: req.body.email,
+//     }
+//   ];
+
+//   client
+//     .send({
+//       from: sender,
+//       to: recipients,
+//       subject: "You are awesome!",
+//       text: "Congrats for sending test email with Mailtrap!",
+//       category: "Integration Test",
+//     })
+//     .then(console.log, console.error);
+
+// }
 
 // import type { NextApiRequest, NextApiResponse } from "next";
 // import { createTransport } from "nodemailer";
