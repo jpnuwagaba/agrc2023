@@ -13,6 +13,7 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar'
 import SideNavbar from '../components/SideNavbar'
 import ConferenceRegistrationForm from '../components/ConferenceRegistrationForm'
+import Register from '../components/Register'
 // import TestForm from '../components/TestForm'
 
 
@@ -33,6 +34,7 @@ const Home: NextPage = () => {
       <AboutSection />
       <TimeSection />
       <Speakers />
+      {/* <Register /> */}
       <ConferenceRegistrationForm />
       {/* <TestForm /> */}
       <Location />

@@ -1,130 +1,89 @@
-import React from "react"
+import React from 'react'
+import { Formik, Field, Form, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
+import { title } from 'process';
 
-export default function Register() {
-  const [formData, setFormData] = React.useState(
-    {
-      firstName: "",
-      lastName: "",
-      email: "",
-      comments: "",
-      isFriendly: true,
-      employment: "",
-      favColor: ""
-    }
-  )
+// define validation schema
+const validationSchema = Yup.object({
+  title: Yup.string().required('Title is required'),
+  fullName: Yup.string().required('Full Name is required'),
+  email: Yup.string().email('Invalid email address').required('Email is required'),
+  organization: Yup.string().required('Organization is required'),
+  country: Yup.string().required('Country is required'),
+});
 
-  function handleChange(event: any) {
-    const { name, value, type, checked } = event.target
-    setFormData(prevFormData => {
-      return {
-        ...prevFormData,
-        [name]: type === "checkbox" ? checked : value
+const Register = () => {
+  const initialValues = {
+    title: '',
+    fullName: '',
+    email: '',
+    organization: '',
+    country: '',
+  };
+
+  const handleSubmit = async (values: any) => {
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(values),
+      });
+      if (response.ok) {
+        console.log('Email sent successfully');
+      } else {
+        console.log('Failure to send email');
       }
-    })
-  }
-
-  function handleSubmit(event: any) {
-    event.preventDefault();
-    console.log(formData)
+    } catch (error) {
+      console.error('Error:', error);
+    }
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="First Name"
-        onChange={handleChange}
-        name="firstName"
-        value={formData.firstName}
-      />
-      <input
-        type="text"
-        placeholder="Last Name"
-        onChange={handleChange}
-        name="lastName"
-        value={formData.lastName}
-      />
-      <input
-        type="email"
-        placeholder="Email"
-        onChange={handleChange}
-        name="email"
-        value={formData.email}
-      />
-      <textarea
-        value={formData.comments}
-        placeholder="Comments"
-        onChange={handleChange}
-        name="comments"
-      />
-      <input
-        type="checkbox"
-        id="isFriendly"
-        checked={formData.isFriendly}
-        onChange={handleChange}
-        name="isFriendly"
-      />
-      <label htmlFor="isFriendly">Are you friendly?</label>
-      <br />
-      <br />
-
-      <fieldset>
-        <legend>Current employment status</legend>
-        <input
-          type="radio"
-          id="unemployed"
-          name="employment"
-          value="unemployed"
-          checked={formData.employment === "unemployed"}
-          onChange={handleChange}
-        />
-        <label htmlFor="unemployed">Unemployed</label>
-        <br />
-
-        <input
-          type="radio"
-          id="part-time"
-          name="employment"
-          value="part-time"
-          checked={formData.employment === "part-time"}
-          onChange={handleChange}
-        />
-        <label htmlFor="part-time">Part-time</label>
-        <br />
-
-        <input
-          type="radio"
-          id="full-time"
-          name="employment"
-          value="full-time"
-          checked={formData.employment === "full-time"}
-          onChange={handleChange}
-        />
-        <label htmlFor="full-time">Full-time</label>
-        <br />
-      </fieldset>
-      <br />
-
-      <label htmlFor="favColor">What is your favorite color?</label>
-      <br />
-      <select
-        id="favColor"
-        value={formData.favColor}
-        onChange={handleChange}
-        name="favColor"
+    <div>
+      <h2 className="font-bold text-darkGreen text-lg">Conference Registration</h2>
+      <Formik
+        initialValues={initialValues}
+        validationSchema={validationSchema}
+        onSubmit={handleSubmit}
       >
-        <option value="">-- Choose --</option>
-        <option value="red">Red</option>
-        <option value="orange">Orange</option>
-        <option value="yellow">Yellow</option>
-        <option value="green">Green</option>
-        <option value="blue">Blue</option>
-        <option value="indigo">Indigo</option>
-        <option value="violet">Violet</option>
-      </select>
-      <br />
-      <br />
-      <button>Submit</button>
-    </form>
+        <Form>
+          <div>
+            <label htmlFor="title">Title</label>
+            <Field type="text" id="title" name="title" />
+            <ErrorMessage name="title" component="div" className="error" />
+          </div>
+
+          <div>
+            <label htmlFor="fullName">Full Name</label>
+            <Field type="text" id="fullName" name="fullName" />
+            <ErrorMessage name="fullName" component="div" className="error" />
+          </div>
+
+          <div>
+            <label htmlFor="email">Email</label>
+            <Field type="email" id="email" name="email" />
+            <ErrorMessage name="email" component="div" className="error" />
+          </div>
+
+          <div>
+            <label htmlFor="organization">Organization</label>
+            <Field type="text" id="organization" name="organization" />
+            <ErrorMessage name="organization" component="div" className="error" />
+          </div>
+
+          <div>
+            <label htmlFor="country">Country</label>
+            <Field type="text" id="country" name="country" />
+            <ErrorMessage name="country" component="div" className="error" />
+          </div>
+
+          <button type="submit">Register</button>
+        </Form>
+      </Formik>
+    </div>
   )
 }
+
+export default Register

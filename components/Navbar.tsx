@@ -21,7 +21,7 @@ const Navbar = () => {
             <a className='font-bold text-gray-700 text-sm' href='#contact'>Contact Us</a>
           </div>
           <div> 
-            <a href={'#registration'} className='hidden text-sm bg-darkGreen text-white px-4 py-2 cursor-pointer rounded-lg lg:block'>Pay</a>
+            <a href={'#registration'} className='hidden text-sm bg-darkGreen text-white px-4 py-2 cursor-pointer rounded-lg lg:block'>Register</a>
           </div>
           <div onClick={() => showMenu(!menu)} id='menu' className='lg:hidden'>
             {menu ? <AiOutlineMenu size={'1.5em'} /> : <AiOutlineClose size={'1.5em'} />}

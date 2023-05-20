@@ -34,7 +34,7 @@ const ConferencePaymentForm = () => {
       <div className='text-center'>
         <div className="text-gray-700">Payment can be made via Standard Chartered Bank or Mobile Money or physically at the Department of Geomatics and Land Management in the new CEDAT building, 2<sup>nd</sup> Floor, Room 3029.</div>
         <div className="text-gray-700">This payment covers the three days for the Pre-Conference Workshops and the Conference.</div>
-        <div className='text-gray-700'>Payment can be made to the numbers below registered to Ms. Flavia Nazziwa</div>
+        <div className='text-gray-700'>Payment can be made to the numbers above registered to Ms. Flavia Nazziwa</div>
       </div>
     </div>
   )
