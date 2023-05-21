@@ -22,7 +22,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>AGRC 2023</title>
+        <title>AGRC 2023 - Advances in Geomatics Research Conference</title>
         <link rel="icon" href="/logo.svg" />
         <meta
           name='description'

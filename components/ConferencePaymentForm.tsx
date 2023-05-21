@@ -20,18 +20,18 @@ const ConferencePaymentForm = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row items-center justify-between bg-gray-100 inline-block p-5 rounded-md h-16">
-              <img className='w-10' src="/assets/airtel-money.png" alt="" />
+            <div className="flex flex-col md:flex-row gap-2 items-center justify-between bg-gray-100 inline-block p-5 rounded-md ">
+              <img className='w-5 md:w-10' src="/assets/airtel-money.png" alt="" />
               <div className='font-bold'>+256 706 712830</div>
             </div>
-            <div className="flex flex-row items-center justify-between bg-gray-100 inline-block p-5 rounded-md h-16">
-              <img className='w-10' src="/assets/mtn_momo.png" alt="" />
+            <div className="flex flex-col md:flex-row gap-2 items-center justify-between bg-gray-100 inline-block p-5 rounded-md ">
+              <img className='w-5 md:w-10' src="/assets/mtn_momo.png" alt="" />
               <div className='font-bold'>+256 775 702 841</div>
             </div>
           </div>
         </div>
       </div>
-      <div className='text-center'>
+      <div className='text-justify'>
         <div className="text-gray-700">Payment can be made via Standard Chartered Bank or Mobile Money or physically at the Department of Geomatics and Land Management in the new CEDAT building, 2<sup>nd</sup> Floor, Room 3029.</div>
         <div className="text-gray-700">This payment covers the three days for the Pre-Conference Workshops and the Conference.</div>
         <div className='text-gray-700'>Payment can be made to the numbers above registered to Ms. Flavia Nazziwa</div>
