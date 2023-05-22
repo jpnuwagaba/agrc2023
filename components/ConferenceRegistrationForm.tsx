@@ -4,6 +4,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import ConferencePaymentForm from './ConferencePaymentForm';
+// import RegisterForm from './Register';
 
 const ConferenceRegistrationForm = () => {
   // const formik = useFormik({
@@ -100,6 +101,7 @@ const ConferenceRegistrationForm = () => {
           </div>                    
           <button className='bg-darkGreen px-3 py-2 rounded text-sm font-bold mt-5 text-white inline' type="submit">Submit</button>
         </form> */}
+        {/* <RegisterForm /> */}
         <ConferencePaymentForm />
       </div>
     </div>

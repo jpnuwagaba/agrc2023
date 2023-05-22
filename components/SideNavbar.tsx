@@ -5,6 +5,7 @@ import { AiOutlineInfoCircle, AiOutlineSchedule } from 'react-icons/ai'
 import { TbPodium } from 'react-icons/tb'
 import { MdOutlineContactSupport } from 'react-icons/md'
 import {BsPen, BsPencilSquare} from 'react-icons/bs'
+import {RiMoneyDollarBoxLine} from 'react-icons/ri'
 
 const SideNavbar = () => {
 
@@ -44,7 +45,7 @@ const SideNavbar = () => {
             <TbPodium size={'1.8rem'} />
           </a> */}
           <a href={'#registration'} className="flex flex-row gap-2 items-center bg-darkRed p-2 text-white rounded-full">
-            <BsPencilSquare size={'1.8rem'} />
+            <RiMoneyDollarBoxLine size={'1.8rem'} />
           </a>
           <a href={'#contact'} className="flex flex-row gap-2 items-center bg-darkRed p-2 text-white rounded-full">
             <MdOutlineContactSupport size={'1.8rem'} />
