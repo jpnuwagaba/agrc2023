@@ -19,8 +19,6 @@ export default async function handler(
   });
 
   try {
-    // send first email to person who recieves registrations
-
     const registrationMailOptions = {
       from: "AGRC2023 <dev@peerdesk.app>",
       to: `${req.body.email}`,
@@ -85,12 +83,13 @@ export default async function handler(
       `,
     };
 
+    // send email to person who recieves registrations
+    
     // send second email to person who registers
     await transporter.sendMail(registrationMailOptions);
+    
     res.status(200).json({ message: "email sent successfully" });
   } catch (error) {
     console.error("error sending email:", error);
   }
-
-  // res.status(200).json({ message: "Email sent" });
 }
