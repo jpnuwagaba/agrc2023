@@ -6,10 +6,10 @@ const Speakers = () => {
     <div id='speakers' className='w-[90%] mx-auto pb-12 md:w-[80%]'>
       <div className='mb-8'>
         <div className="text-center text-2xl font-bold text-darkGreen mb-5 lg:text-4xl">Speakers</div>
-        <div className='text-center lg:w-[70%] mx-auto'>Join us as industry leaders, experts, and reseachers in Land and Geomatics take the stage to share their insights, experiences, and visions for the future of Sustainable Fit-For-Purpose Solutions at our upcoming conference.</div>
+        <div className='text-center lg:w-[70%] mx-auto text-lg'>Join us as industry leaders, experts, and reseachers in Land and Geomatics take the stage to share their insights, experiences, and visions for the future of Sustainable Fit-For-Purpose Solutions at our upcoming conference.</div>
       </div>
       {/* component begins */}
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <Speaker
           name='Prof. Stig Enemark'
           image='stig.webp'
@@ -21,7 +21,7 @@ const Speakers = () => {
         />
         <Speaker
           name='Prof. Rexford Ahene'
-          image='ahene.jpg'
+          image='rexford.png'
           affiliation='Professor of Economics, Lafayette College, USA'
           speciality='Land Management/Land Valuation'
           typeOfSpeech='Keynote speech'
@@ -30,7 +30,7 @@ const Speakers = () => {
         />
         <Speaker
           name='Prof. Moreblessings Shoko'
-          image='shoko.jpg'
+          image='more-blessing.jpg'
           affiliation='University of Cape Town'
           speciality='UAV in Geomatics/Built Environment Photogrammetric Applications/
           Women and Land in Geomatics/Indigenous methods incorporation into Geo Information Data Collection'

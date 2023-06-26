@@ -29,15 +29,15 @@ const TimeSection = () => {
               <div className="text-darkGreen font-bold">Event Dates</div>
               <div className="text-sm text-gray-700">11 <sup>th</sup>, 12 <sup>th</sup> August, 2023</div>
             </div> */}
-              <div className="flex flex-row gap-3">
-                <HiOutlineBuildingOffice size={'3em'} color={'orange'} />
+              <div className="flex flex-row gap-5">
+                <div><HiOutlineBuildingOffice size={'3em'} color={'orange'} /></div>
                 <div>
-                  <div className="text-darkGreen font-bold">Kampala, Uganda</div>
-                  <div className="text-sm font-bold text-gray-600">Venue to be communicated</div>
+                  <div className="text-darkGreen font-bold">Makerere University</div>
+                  <div className="text-sm font-bold text-gray-600">CEDAT Conference Hall</div>
                 </div>
               </div>
-              <div className="flex flex-row gap-3">
-                <BiAlarm size={'3em'} color={'orange'} />
+              <div className="flex flex-row gap-5">
+                <div><BiAlarm size={'3em'} color={'orange'} /></div>
                 <div>
                   <div className="text-darkGreen font-bold">Call Now</div>
                   <div className="text-sm font-bold text-gray-600">+256 784 614675</div>

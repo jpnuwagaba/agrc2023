@@ -5,7 +5,7 @@ const AboutSection = () => {
     <div id='about' className='w-[90%] mx-auto md:w-[80%] pt-8 md:pt-24'>
       <div className="grid gap-4 lg:grid-cols-3 lg:gap-12">
         <div className="text-2xl text-darkGreen font-bold lg:col-span-1 lg:text-4xl">About This Conference</div>
-        <div className="text-gray-700 text-justify lg:col-span-2">
+        <div className="text-gray-700 text-justify text-lg lg:col-span-2">
           <p>
             <span className='font-bold'>The Department of Geomatics and Land Management - Makerere University, Kampala</span> has organised the biennial Advances in Geomatics Research Conference (AGRC) since 2011.
             The purpose of the conference is to highlight, promote and encourage scholarship in the various Geomatics
