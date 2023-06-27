@@ -18,7 +18,7 @@ const Navbar = () => {
             <a className='font-bold text-gray-700 text-sm' href='#timeline'>Timeline</a>
             <a className='font-bold text-gray-700 text-sm' href='#about'>About AGRC</a>
             <a className='font-bold text-gray-700 text-sm' href='#speakers'>Speakers</a>
-            <a className='font-bold text-gray-700 text-sm' href='#contact'>Contact Us</a>
+            <a className='font-bold text-gray-700 text-sm' href='#contact'>Contact Us</a> 
           </div>
           <div> 
             <a href={'https://docs.google.com/forms/d/e/1FAIpQLScUIApDtu6SdZ9eKz3MkAMFarPxhcfpHECCmo1GoMP3SUIH5Q/viewform?vc=0&c=0&w=1&flr=0'} target='_blank' className='hidden text-sm bg-darkGreen text-white px-4 py-2 cursor-pointer rounded-lg lg:block'>Register</a>

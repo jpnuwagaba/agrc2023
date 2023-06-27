@@ -13,7 +13,7 @@ const Footer = () => {
         <a href='#'>Home</a>
         <a href='#about'>About AGRC</a>
         <a href='#speakers'>Speakers</a>
-        <a href='#schedule'>Schedule</a>
+        <a href='#timeline'>Timeline</a>
         <a href='#contact'>Contact Us</a>
       </div>
     </div>
