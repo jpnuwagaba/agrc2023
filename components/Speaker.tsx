@@ -24,7 +24,7 @@ const Speaker: React.FC<props> = ({ image, name, typeOfSpeech, telephone, email,
             backgroundRepeat: 'no-repeat'
           }}
         />
-        <div className='flex flex-col items-center text-center p-8'>
+        <div className='flex flex-col items-center text-center p-5'>
           <div className="font-bold text-xl">{name}</div>
           <div className="font-bold text-gray-700">{affiliation}</div>
           <div className="text-sm text-gray-700">{speciality}</div>

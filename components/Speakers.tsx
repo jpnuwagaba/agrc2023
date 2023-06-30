@@ -9,7 +9,7 @@ const Speakers = () => {
         <div className='text-center lg:w-[70%] mx-auto text-lg'>Join us as industry leaders, experts, and reseachers in Land and Geomatics take the stage to share their insights, experiences, and visions for the future of Sustainable Fit-For-Purpose Solutions at our upcoming conference.</div>
       </div>
       {/* component begins */}
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
         <Speaker
           name='Prof. Stig Enemark'
           image='stig.webp'
@@ -34,6 +34,15 @@ const Speakers = () => {
           affiliation='University of Cape Town'
           speciality='UAV in Geomatics/Built Environment Photogrammetric Applications/
           Women and Land in Geomatics/Indigenous methods incorporation into Geo Information Data Collection'
+          typeOfSpeech='Keynote speech'
+          telephone='+256 712345678'
+          email='sample@gmail.com'
+        />
+        <Speaker
+          name='Ms. Vineet Chaturvedi'
+          image='Vineet.jpeg'
+          affiliation='Technical University of Munich'
+          speciality='Aerospace and Geodesy'
           typeOfSpeech='Keynote speech'
           telephone='+256 712345678'
           email='sample@gmail.com'
