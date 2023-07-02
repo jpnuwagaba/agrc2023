@@ -15,8 +15,8 @@ interface props {
 const Speaker: React.FC<props> = ({ image, name, typeOfSpeech, telephone, email, affiliation, speciality }) => {
   return (
     <>
-      <div className="flex flex-col  gap-5 items-center bg-gray-100 rounded-lg">
-        <div className='w-full aspect-square  rounded-t-xl'
+      <div className="flex flex-col md:flex-row gap-4 items-center md:items-start lg:items-center">
+        <div className='w-24 h-24 lg:w-36 lg:h-36 aspect-square border-4 border-darkRed rounded-full'
           style={{
             background: `url(/assets/${image})`,
             backgroundPosition: 'center',
@@ -24,7 +24,7 @@ const Speaker: React.FC<props> = ({ image, name, typeOfSpeech, telephone, email,
             backgroundRepeat: 'no-repeat'
           }}
         />
-        <div className='flex flex-col items-center text-center p-5'>
+        <div className='flex flex-col items-center md:items-start text-center md:text-left'>
           <div className="font-bold text-xl">{name}</div>
           <div className="font-bold text-gray-700">{affiliation}</div>
           <div className="text-sm text-gray-700">{speciality}</div>
@@ -35,10 +35,3 @@ const Speaker: React.FC<props> = ({ image, name, typeOfSpeech, telephone, email,
 }
 
 export default Speaker
-
-// style={{
-//   background: `url(/assets/${image})`,
-//   backgroundPosition: 'center',
-//   backgroundSize: 'cover',
-//   backgroundRepeat: 'no-repeat'
-// }}

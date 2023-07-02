@@ -5,29 +5,53 @@ import { FaChalkboardTeacher, FaPeopleCarry } from 'react-icons/fa'
 const PreConference = () => {
   return (
     <div>
-      <div className=' mx-auto grid gap-5 md:grid-cols-2 py-16 '>
-        <div className="flex flex-col items-start gap-6 bg-darkGreen p-8 rounded-lg shadow-lg">
-          <FaPeopleCarry size={'2.5em'} color={'white'} />
-          <div className='text-white'>
-            <div className="text-xl font-bold uppercase">pre-conference workshops</div>
-            <div className="my-1">14<sup>th</sup>, 15<sup>th</sup>, 16<sup>th</sup> August, 2023</div>
-            <ul className='text-sm uppercase'>
-              <li className='mt-2 list-disc'>african reference frame (afref) and gnss - cors and its applications</li>
-              <li className='mt-2 list-disc'>gmes</li>
-            </ul>
+      <div>
+          <div className="text-center text-2xl font-bold text-darkGreen mb-5 mt-12 lg:text-4xl">Pre-Conference Events</div>
+        <div className='text-center lg:w-[70%] mx-auto text-lg mb-8'>Make the most out of your conference experience by joining our exciting lineup of activities and workshops designed to kickstart your learning journey. From interactive sessions to networking opportunities, these events will set the stage for a truly immersive conference experience.</div>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="rounded-md grid grid-cols-1 shadow-md w-full">
+              <div className='w-full h-44 rounded-t-md'
+                style={{
+                  background: `url(/assets/gis.jpg)`,
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat'
+                }}
+              />
+              <div className="p-5 flex flex-col items-start gap-2">
+                <div className="text-xl font-bold">Introduction to GIS</div>
+                <div className="text-sm">CEDAT Computer Lab Room 3034</div>
+              </div>
+            </div>
+            <div className="rounded-md grid grid-cols-1 shadow-md w-full">
+              <div className='w-full h-44 rounded-t-md'
+                style={{
+                  background: `url(/assets/drone-surveying.jpeg)`,
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat'
+                }}
+              />
+              <div className="p-5 flex flex-col items-start gap-2">
+                <div className="text-xl font-bold">Mapping using UAVs</div>
+                <div className="text-sm">CEDAT Computer GIS Center</div>
+              </div>
+            </div>
+            <div className="rounded-md grid grid-cols-1 shadow-md w-full">
+              <div className='w-full h-44 rounded-t-md'
+                style={{
+                  background: `url(/assets/dialogue.jpg)`,
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat'
+                }}
+              />
+              <div className="p-5 flex flex-col items-start gap-2">
+                <div className="text-xl font-bold">Public Dialogue</div>
+                <div className="text-sm">CEDAT Conference Hall</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col items-start gap-6 bg-orange p-8 rounded-lg shadow-lg">
-          <FaChalkboardTeacher size={'2.5em'} color={'white'} />
-          <div className='text-white'>
-            <div className="text-xl font-bold uppercase">pre-conference tutorials</div>
-            <div className="my-1">14<sup>th</sup>, 15<sup>th</sup>, 16<sup>th</sup> August, 2023</div>
-            <ul className='text-sm uppercase'>
-              <li className='mt-2 list-disc'>introduction to fit-for-purpose land aministration for land professionals</li>
-              <li className='mt-2 list-disc'>fundamentals of geographic information systems</li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
   )
