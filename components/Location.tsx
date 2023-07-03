@@ -13,7 +13,7 @@ const Location = () => {
           <div className='mb-12'>
             <div className="text-2xl text-darkGreen font-bold lg:text-2xl">Location</div>
             {/* <div className="font-bold text-gray-700 my-2">Conference Hall, College of Engineering Design Art &Technology, Makerere University</div> */}
-            <div className="font-bold text-gray-700 my-2">Makerere University, CEDAT Conference Hall</div>
+            <div className="font-bold text-gray-700 my-2">Makerere University, Yusuf Lule CTF Auditorium</div>
           </div>
           <div className='mb-12'>
             <div className="text-2xl text-darkGreen font-bold lg:text-2xl">Contact Us</div>

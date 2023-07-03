@@ -33,7 +33,7 @@ const TimeSection = () => {
                 <div><HiOutlineBuildingOffice size={'3em'} color={'orange'} /></div>
                 <div>
                   <div className="text-darkGreen font-bold">Makerere University</div>
-                  <div className="text-sm font-bold text-gray-600">CEDAT Conference Hall</div>
+                  <div className="text-sm font-bold text-gray-600">Yusuf Lule CTF Auditorium</div>
                 </div>
               </div>
               <div className="flex flex-row gap-5">
