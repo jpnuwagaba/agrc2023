@@ -23,7 +23,7 @@ const AboutSection = () => {
             This year's conference will have a public dialogue on <span className='font-bold'>The National Land Policy.</span> It will also have pre-conference workshops
             covering advances in the Global Navigation Satellite System (GNSS), and an Introduction to Laser Scanning and UAV Mapping.
           </p>
-          <Link href={'/assets/AGRC2023-Poster.pdf'} download target='_blank' className="flex flex-row gap-4 items-center bg-darkRed py-2 px-4 text-white max-w-max rounded-md hover:cursor-pointer mt-4">
+          <Link href={'/assets/AGRC2023-Poster.pdf'} target='_blank' className="flex flex-row gap-4 items-center bg-darkRed py-2 px-4 text-white max-w-max rounded-md hover:cursor-pointer mt-4">
             <div className='text-sm'>Conference Poster</div>
             <BiDownload />
           </Link>
