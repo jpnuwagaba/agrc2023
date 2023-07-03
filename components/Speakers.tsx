@@ -47,6 +47,15 @@ const Speakers = () => {
           telephone='+256 712345678'
           email='sample@gmail.com'
         />
+        <Speaker
+          name='Ms. Viola Otieno'
+          image='viola.jpeg'
+          affiliation='IGAD Climate Prediction and Applications Center - ICPAC'
+          speciality='Earth Observation Expert, Lead - Regional Drought Early Warning'
+          typeOfSpeech='Keynote speech'
+          telephone='+256 712345678'
+          email='sample@gmail.com'
+        />
         {/* <Speaker
           name='Prof Anthony Gidudu'
           image='gidudu.png'
