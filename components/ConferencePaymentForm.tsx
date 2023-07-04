@@ -5,6 +5,11 @@ const ConferencePaymentForm = () => {
     <div className='flex flex-col gap-4'>
       <div className='font-bold text-xl text-center'>Conference & Pre-Conference fee: $80 or 300,000 UShs</div>
       {/* <div className="font-bold text-xl">Payment Options</div> */}
+      <div className='text-center'>
+        <div className="text-gray-700">Payment can be made via Standard Chartered Bank or Mobile Money or physically at the Department of Geomatics and Land Management in the new CEDAT building, 2<sup>nd</sup> Floor, Room 3029.</div>
+        <div className="text-gray-700">This payment covers the three days for the Pre-Conference Workshops and the Conference.</div>
+        <div className='text-gray-700'>Payment can be made to the numbers above registered to Ms. Flavia Nazziwa</div>
+      </div>
       <div className='flex flex-col gap-3'>
         <div className='flex flex-col gap-2'>
           <div className='grid grid-cols-2 gap-2'>
@@ -31,11 +36,11 @@ const ConferencePaymentForm = () => {
           </div>
         </div>
       </div>
-      <div className='text-justify'>
+      {/* <div className='text-center'>
         <div className="text-gray-700">Payment can be made via Standard Chartered Bank or Mobile Money or physically at the Department of Geomatics and Land Management in the new CEDAT building, 2<sup>nd</sup> Floor, Room 3029.</div>
         <div className="text-gray-700">This payment covers the three days for the Pre-Conference Workshops and the Conference.</div>
         <div className='text-gray-700'>Payment can be made to the numbers above registered to Ms. Flavia Nazziwa</div>
-      </div>
+      </div> */}
     </div>
   )
 }

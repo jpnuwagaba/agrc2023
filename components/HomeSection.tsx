@@ -3,7 +3,7 @@ import React from 'react'
 
 const HomeSection = () => {
   return (
-    <div className='relative bg-[url(/assets/drone-surveying.jpeg)] bg-center bg-no-repeat bg-cover text-white h-[50vh] md:h-[70vh]'>
+    <div className='relative bg-[url(/assets/auditorium.jpg)] bg-center bg-no-repeat bg-cover text-white h-[50vh] md:h-[70vh]'>
       <div className='relative w-[90%] mx-auto md:w-[80%] py-[20%] md:py-[10%]'>
         <div className='text-center absolute z-10  md:text-left'>
           <div className="text-xl md:text-4xl font-bold uppercase">7<sup>th</sup> advances in <span className='text-orange'>geomatics</span> research conference</div>

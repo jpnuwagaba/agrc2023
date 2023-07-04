@@ -29,7 +29,7 @@ const Speakers = () => {
           email=''
         />
         <Speaker
-          name='Prof. Moreblessings Shoko'
+          name='Dr. Moreblessings Shoko'
           image='more-blessing.jpg'
           affiliation='University of Cape Town'
           speciality='UAV in Geomatics/Built Environment Photogrammetric Applications/
