@@ -25,13 +25,13 @@ const ConferencePaymentForm = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row gap-2 items-center justify-between bg-gray-100 inline-block p-5 rounded-md ">
+            <div className="flex flex-col md:flex-row gap-2 items-start md:items-center justify-between bg-gray-100 inline-block p-5 rounded-md ">
               <img className='w-5 md:w-10' src="/assets/airtel-money.png" alt="" />
-              <div className='font-bold'>+256 706 712830</div>
+              <div className='font-bold text-sm md:text-md'>+256 706 712830</div>
             </div>
-            <div className="flex flex-col md:flex-row gap-2 items-center justify-between bg-gray-100 inline-block p-5 rounded-md ">
+            <div className="flex flex-col md:flex-row gap-2 items-start md:items-center justify-between bg-gray-100 inline-block p-5 rounded-md ">
               <img className='w-5 md:w-10' src="/assets/mtn_momo.png" alt="" />
-              <div className='font-bold'>+256 775 702 841</div>
+              <div className='font-bold text-sm md:text-md'>+256 775 702 841</div>
             </div>
           </div>
         </div>
