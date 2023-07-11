@@ -21,7 +21,7 @@ const Timeline = () => {
           </div>
           <div className=' border-l-2 border-darkGreen'>
             <TimelineEl
-              date={`31st July`}
+              date={`28th July`}
               event={'Deadline for submission of Extended Abstracts'}
             />
           </div>
