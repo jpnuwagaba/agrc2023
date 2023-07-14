@@ -41,7 +41,7 @@ const PreConference = () => {
             <div className="p-5 flex flex-col items-start gap-2">
               <div className="text-xl font-bold">Mapping using UAVs</div>
               <div className="text-sm">CEDAT Computer GIS Center</div>
-              <Link href={'/assets/AGRC Mapping using UAVs-2 (1).pdf.pdf'} target='_blank' className="flex flex-row gap-4 items-center bg-darkRed py-2 px-4 text-white max-w-max rounded-md hover:cursor-pointer mt-2">
+              <Link href={'/assets/AGRC Mapping using UAVs-2 (1).pdf'} target='_blank' className="flex flex-row gap-4 items-center bg-darkRed py-2 px-4 text-white max-w-max rounded-md hover:cursor-pointer mt-2">
                 <div className='text-sm'>Download Flyer</div>
                 <BiDownload />
               </Link>
@@ -59,7 +59,7 @@ const PreConference = () => {
             <div className="p-5 flex flex-col items-start gap-2">
               <div className="text-xl font-bold">Public Dialogue</div>
               <div className="text-sm">CEDAT Conference Hall</div>
-              <Link href={'/assets/AGRC Public Dialogue - ISU -2.pdf.pdf'} target='_blank' className="flex flex-row gap-4 items-center bg-darkRed py-2 px-4 text-white max-w-max rounded-md hover:cursor-pointer mt-2">
+              <Link href={'/assets/AGRC Public Dialogue - ISU -2.pdf'} target='_blank' className="flex flex-row gap-4 items-center bg-darkRed py-2 px-4 text-white max-w-max rounded-md hover:cursor-pointer mt-2">
                 <div className='text-sm'>Download Flyer</div>
                 <BiDownload />
               </Link>
