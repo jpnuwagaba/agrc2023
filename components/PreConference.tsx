@@ -14,7 +14,7 @@ const PreConference = () => {
           <div className="rounded-md grid grid-cols-1 shadow-md w-full">
             <div className='w-full h-44 rounded-t-md'
               style={{
-                background: `url(/assets/gis.jpg)`,
+                background: `url(/assets/wetland.jpeg)`,
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'
