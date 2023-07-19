@@ -10,7 +10,7 @@ const PreConference = () => {
       <div>
         <div className="text-center text-2xl font-bold text-darkGreen mb-5 mt-12 lg:text-4xl">Pre-Conference Events</div>
         <div className='text-center lg:w-[70%] mx-auto text-lg mb-8'>Make the most out of your conference experience by joining our exciting lineup of activities and workshops designed to kickstart your learning journey. From interactive sessions to networking opportunities, these events will set the stage for a truly immersive conference experience.</div>
-        <div className="flex flex-col md:flex-row items-start justify-between gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="rounded-md grid grid-cols-1 shadow-md w-full">
             <div className='w-full h-44 rounded-t-md'
               style={{
@@ -65,6 +65,24 @@ const PreConference = () => {
               </Link>
             </div>
           </div>
+          <div className="rounded-md grid grid-cols-1 shadow-md w-full">
+            <div className='w-full h-44 rounded-t-md'
+              style={{
+                background: `url(/assets/dialogue.jpg)`,
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat'
+              }}
+            />
+            <div className="p-5 flex flex-col items-start gap-2">
+              <div className="text-xl font-bold">Digital Earth Africa Workshop</div>
+              <div className="text-sm">CEDAT Conference Hall</div>
+              <Link href={'/assets/dea1.png'} target='_blank' className="flex flex-row gap-4 items-center bg-darkRed py-2 px-4 text-white max-w-max rounded-md hover:cursor-pointer mt-2">
+                <div className='text-sm'>See Flyer</div>
+                /* <BiDownload /> */
+              </Link>
+            </div>
+          </div>          
         </div>
       </div>
     </div>
