@@ -79,7 +79,7 @@ const PreConference = () => {
               <div className="text-sm">CEDAT Conference Hall</div>
               <Link href={'/assets/dea1.png'} target='_blank' className="flex flex-row gap-4 items-center bg-darkRed py-2 px-4 text-white max-w-max rounded-md hover:cursor-pointer mt-2">
                 <div className='text-sm'>See Flyer</div>
-                /* <BiDownload /> */
+{/*                 <BiDownload /> */}
               </Link>
             </div>
           </div>          
