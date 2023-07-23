@@ -20,7 +20,7 @@ const TimeSection = () => {
                 </div>
                 <br />
                 <Timer />
-                <Link href={'https://docs.google.com/forms/d/e/1FAIpQLScUIApDtu6SdZ9eKz3MkAMFarPxhcfpHECCmo1GoMP3SUIH5Q/viewform?vc=0&c=0&w=1&flr=0'} target='_blank' className="w-full rounded-lg bg-darkGreen text-center p-2 text-white my-5 cursor-pointer">Register</Link>
+{/*                 <Link href={'https://docs.google.com/forms/d/e/1FAIpQLScUIApDtu6SdZ9eKz3MkAMFarPxhcfpHECCmo1GoMP3SUIH5Q/viewform?vc=0&c=0&w=1&flr=0'} target='_blank' className="w-full rounded-lg bg-darkGreen text-center p-2 text-white my-5 cursor-pointer">Register</Link> */}
               </div>
             </div>
             <div className="flex flex-col justify-between items-start gap-8">
