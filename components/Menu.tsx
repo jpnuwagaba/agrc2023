@@ -17,9 +17,9 @@ const Menu = () => {
       </ul>
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center gap-6 my-12">
-          <div  onClick={() => setMainSite(!mainSite)}>            
+{/*           <div  onClick={() => setMainSite(!mainSite)}>            
             <Link href={'https://docs.google.com/forms/d/e/1FAIpQLScUIApDtu6SdZ9eKz3MkAMFarPxhcfpHECCmo1GoMP3SUIH5Q/viewform?vc=0&c=0&w=1&flr=0'} target='_blank' className='bg-darkGreen w-full text-sm text-center text-white px-4 py-2 cursor-pointer rounded-lg'>Register</Link>
-          </div>
+          </div> */}
           <div>
             <Link href={'mailto:agrc2023@mak.ac.ug'} target='_blank' className='bg-darkRed text-sm w-36 text-center text-white px-4 py-2 cursor-pointer rounded-lg'>Submit Abstract</Link>
           </div>
