@@ -10,7 +10,7 @@ const Speakers = () => {
       </div>
       {/* component begins */}
       <div className="grid grid-cols-1 gap-16 md:grid-cols-2">
-        <Speaker
+{/*         <Speaker
           name='Prof. Stig Enemark'
           image='stig.webp'
           affiliation='Professor Emeritus, Aalborg Universitet Danish Centre for Spatial Planning'
@@ -27,7 +27,7 @@ const Speakers = () => {
           typeOfSpeech='Keynote speech'
           telephone=''
           email=''
-        />
+        /> */}
         <Speaker
           name='Dr. Moreblessings Shoko'
           image='more-blessing.jpg'
