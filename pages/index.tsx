@@ -14,6 +14,7 @@ import Navbar from '../components/Navbar'
 import SideNavbar from '../components/SideNavbar'
 import ConferenceRegistrationForm from '../components/ConferenceRegistrationForm'
 import Register from '../components/Register'
+import Program from '../components/Program'
 // import TestForm from '../components/TestForm'
 
 
@@ -34,6 +35,7 @@ const Home: NextPage = () => {
       <AboutSection />
       <TimeSection />
       <Speakers />
+      {/* <Program /> */}
       {/* <Register /> */}
       <ConferenceRegistrationForm />
       {/* <TestForm /> */}

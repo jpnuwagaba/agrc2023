@@ -13,7 +13,7 @@ const HomeSection = () => {
           <div className='flex justify-around md:justify-start'>
             <div className='flex items-center gap-3'>
               {/* <div className="rounded-xl">call for abstracts</div> */}
-              <Link href={'mailto:agrc2023@mak.ac.ug'} target='_blank' className="rounded-lg bg-darkRed text-sm font-bold px-3 py-2 cursor-pointer">Submit Abstract</Link>
+              <Link href={'/assets/program.pdf'} target='_blank' className="rounded-md bg-darkRed text-sm font-bold px-3 py-2 cursor-pointer">Conference Program</Link>
             </div>
           </div>
         </div>

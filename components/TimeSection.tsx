@@ -44,6 +44,7 @@ const TimeSection = () => {
                 </div>
               </div>
             </div>
+            <Link href={'/assets/program.pdf'} target='_blank' className="rounded-md bg-darkGreen text-sm font-bold px-3 py-3 shadow-lg cursor-pointer w-full text-white text-center">Conference Program</Link>
             
           </div>
           <Timeline />
